@@ -1,3 +1,4 @@
+package _solution;
 
 
 
@@ -193,7 +194,7 @@ public class PasswordMain extends BorderPane
 		}
 	}
 
-	public void readFile() {
+	public void readFile() throws LengthException, NoDigitException, NoUpperAlphaException, NoLowerAlphaException, InvalidSequenceException {
 			FileChooser chooser = new FileChooser();
 			Scanner input;
 			File selectedFile = chooser.showOpenDialog(null);
